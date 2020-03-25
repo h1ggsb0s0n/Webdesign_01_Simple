@@ -1,0 +1,307 @@
+
+/*-----------------------*/
+/*BASIC SETUP*/
+/*-----------------------*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  background-color: #fff;
+  color: #000;
+  font-family: "Lato", "Arial", "sans-serif"; /* font alternatives  -> any sans-serif is alright*/
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+
+/*-----------------------*/
+/*Reusable Components*/
+/*-----------------------*/
+
+.row{
+  max-width: 1200px; /*Breite der Seite in der Mitte*/
+  margin: 0 auto; /*centered the stuff 0 heigh 0 center 0 auto*/
+}
+
+
+/*-----------------------*/
+/*Headings*/
+/*-----------------------*/
+
+
+
+header h1 {
+  margin-top: 0;
+  margin-bottom: 20px; /*space between h1 and buttons*/
+  color: #fff;
+  font-size:250%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+header h2 {
+  margin-top: 0;
+  margin-bottom: 20px; /*space between h1 and buttons*/
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+
+
+
+/*-----------------------*/
+/*HEADER*/
+/*-----------------------*/
+
+header{
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0,0,0,0.7)), url(img/School_Extra_Extra_Large.jpg);
+  background-size: cover; /*Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges*/
+  background-position: center;
+  height: 50vh;
+  border-bottom: 3px solid #e67e22;
+}
+
+
+.banner-text-box{
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*translates the box to 50% width and height to th left and above*/
+}
+
+.logo{
+    height: 100px;
+    width:  auto;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*-----------------------*/
+/*Navigation*/
+/*-----------------------*/
+
+.navigation{
+  background-color: rgba(0,0,0,0.5);
+  border-bottom: 3px solid #e67e22;
+
+}
+
+.main-nav{
+  float: right;
+  list-style:none; /*get rid of bulletPoints*/
+  margin-top: 60px;
+}
+
+.main-nav li{
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%; /* makes 18 px-> see root fomtn size*/
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+
+}
+
+
+.main-nav li a:hover,
+.main-nav li a:active{
+  border-bottom: 2px solid #e67e22;
+
+}
+
+.dropdown-content {
+  margin-top: 11px;
+  display: none;
+  position: absolute;
+  background-color: #595956;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown {
+  text-align: left;
+}
+
+.dropdown-content li{
+  display: block;
+  margin-left: 0;
+}
+.dropdown-content a{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+/*-----------------------*/
+/*Section*/
+/*-----------------------*/
+
+section{
+  border-bottom: 3px solid #e67e22;
+}
+
+section h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #000;
+  font-size:200%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  border-bottom: 3px solid #e67e22;
+}
+
+/*-----------------------*/
+/*Buttons*/
+/*-----------------------*/
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+}
+
+.btn:visited{
+  text-decoration: none;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color:#e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+
+  border: 1px solid #e67e22;
+  color: #e67e22;
+
+}
+
+
+.btn-full:hover,
+.btn-full:active{
+  filter: brightness(85%);
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+  background-color: #e67e22;
+  border:1px solid #cf6d17;
+  color: #fff;
+}
+
+/*-----------------------*/
+/*Form*/
+/*-----------------------*/
+
+
+#content-wrapper, /*wird nicht benötigt*/
+input[type="submit"]{
+	width: 100%;
+
+
+}
+
+
+input[type="submit"]{
+	width: 100%;
+  border: 1px solid #e67e22;
+  color: #e67e22;
+  border-radius: 200px;
+
+}
+
+input[type="submit"]:hover{
+  color: #fff;
+  background-color: #e67e22;
+
+}
+
+
+
+.content{
+	width: 500px; /*Anpassen*/
+	margin: 0 auto;
+	padding: 20px;/*optional*/
+	background: #FFF;/*not needed*/
+}
+
+label{
+	width: 20%;
+	float: left;
+}
+
+input, select, textarea{
+	padding: 5px;
+	border: none;/*Input hat standartmässig einen border*/
+	border-bottom: 3px solid #CCCCCC;
+	width: 80%;
+	margin-bottom: 10px;
+}
+
+.labelradio, .labelcheckbox{
+	width: 100%;
+	margin-top: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"]
+{
+	width: 30px;
+}
+
+/*-----------------------*/
+/*Footer*/
+/*-----------------------*/
+
+footer h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000;
+    font-size:100%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+footer p{
+  font-size: 70%;
+  text-align: center;
+}

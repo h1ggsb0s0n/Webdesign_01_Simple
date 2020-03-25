@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+
+
+  <title>Kreative Lernanstalt GMBH</title>
+</head>
+
+<body>
+
+  <header>
+    <!-- tells google that it is a header doies not import .row -> so the image spans over the whole page-->
+    <nav class="navigation">
+      <div class="row">
+        <img src="resources/img/logo-white.png" alt="Logo der Schule" class="logo">
+        <ul class="main-nav">
+          <li><a href="">Willkommen</a></li>
+          <li class="dropdown"><a href="">Portrait</a>
+            <ul class="dropdown-content">
+              <li><a href="">Schulleitung</a></li>
+              <li><a href="">Dozierende</a></li>
+              <li><a href="">Leitbild</a></li>
+              <li><a href="">Schule/Schulräume</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="">Ausbildung</a>
+            <ul class="dropdown-content">
+              <li><a href="">Ausbildungskonzept</a></li>
+              <li><a href="">Informatik</a></li>
+              <li><a href="">Medienkompetenz</a></li>
+              <li><a href="">Webdesign</a></li>
+              <li><a href="">Weiterbildungskurse</a></li>
+            </ul>
+          </li>
+          <li><a href="">Kontakt</a></li>
+          <li><a href="">Impressum</a></li>
+          <li><a href="">Datenschutzerklärung </a></li>
+
+        </ul>
+        <div style="clear:both"></div><!-- ul (.main-nav) hat float right-->
+      </div><!-- row-> will always be centered-->
+
+    </nav>
+    <div class="banner-text-box">
+      <h1>Kreative Lernanstalt GmbH</h1>
+      <h2> Die Baum Schule für dich!</h2>
+      <a class="btn btn-full" href="#">Schreib dich neu heute ein</a>
+      <a class="btn btn-ghost" href="#">Information</a>
+    </div>
+
+  </header>
+
+  <section>
+    <div class="content">
+      <h2>Kontaktformular</h2>
+      <p>Bitte f&uuml;llen Sie das untenstehende Formular aus.</p>
+
+      <form method="post" action="mailto:info@kreative-lernanstalt.ch" name="kontaktformular">
+
+        <label for="anrede">Anrede</label>
+        <select name="anrede" id="anrede">
+          <option value="Frau">Frau</option>
+          <option value="Herr">Herr</option>
+        </select>
+
+
+        <label for="vorname">Vorname</label>
+        <input type="text" name="vorname" id="vorname" value="" />
+
+        <label for="nachname">Nachname</label>
+        <input type="text" name="nachname" id="nachname" value="" />
+
+        <label for="telefon">Telefon</label>
+        <input type="tel" name="telefon" id="telefon" value="" />
+
+        <label for="email">E-Mail</label>
+        <input type="email" name="email" id="email" value="" />
+
+        <label for="mitteilung">Mitteilung</label>
+        <textarea name="mitteilung" id="mitteilung"></textarea>
+
+        <label class="labelradio">Wie haben Sie von uns erfahren?</label>
+        <input name="feedback1" type="radio" value="google">Google
+        <input name="feedback1" type="radio" value="inserat">Inserat
+        <input name="feedback1" type="radio" value="empfehlung">Empfehlung
+        <input name="feedback1" type="radio" value="sonstige">Sonstige
+
+        <div style="clear:both"></div><!--wird benötigt da aufteilung label/input float-->
+
+        <label class="labelcheckbox" for="dsgvo">DSGVO</label>
+        <input name="dsgvo" id="dsgvo" type="checkbox" value="ja" />Ich akzeptiere die <a href="#">Datenschutzrichtlinien</a>
+
+        <input type="submit" name="submit" value="Absenden" />
+
+      </form>
+      <br>
+      <h2>Location</h2>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2694.4004835141864!2d7.668767316245957!3d47.521065601875044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791b633e8f8e2fb%3A0x6a110a0df7ce510b!2sHF-ICT!5e0!3m2!1sde!2sch!4v1584881198808!5m2!1sde!2sch" width="500" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="content">
+      <h3>&Ouml;ffnungszeiten Sekretariat</h3>
+
+
+      <p>
+        <strong>Kreative Lernanstalt GmbH</strong>
+        <br>
+        Musterstrasse 99
+        4057 Basel/Switzerland
+        <br>
+        Tel. +41 61 999 99 99
+        <br>
+        &Ouml;ffnungszeiten: 9.00- 12.00, 13.00 - 17.00
+        <br>
+        Mail
+        <a href="mailto:info@kreative-lernanstalt.com">info@kreative-lernanstalt.com</a>
+      </p>
+
+    </div>
+
+
+
+
+  </footer>
+
+</body>
+
+</html>
